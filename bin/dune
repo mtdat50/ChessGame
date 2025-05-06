@@ -1,0 +1,12 @@
+(executable
+ (name server)
+ (public_name chess_webapp)
+ (modules server)
+ (libraries 
+  chess
+  cohttp-lwt-unix 
+  lwt 
+  yojson 
+  lwt_ppx
+  unix)
+ (preprocess (pps lwt_ppx)))

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chess</h1>
+    
+    <div class="game-controls">
+      <button id="new-game-btn">New Game</button>
+      <div class="status-container">
+        <span id="status">White to move</span>
+      </div>
+    </div>
+    
+    <div class="game-layout">
+      <div class="board-container">
+        <div id="chess-board" class="chess-board"></div>
+        <div class="promotion-popup" id="promotion-popup">
+          <div class="promotion-title">Choose promotion:</div>
+          <div class="promotion-pieces">
+            <div class="promotion-piece" data-piece="queen">♕</div>
+            <div class="promotion-piece" data-piece="rook">♖</div>
+            <div class="promotion-piece" data-piece="bishop">♗</div>
+            <div class="promotion-piece" data-piece="knight">♘</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="game-info">
+        <div class="captured-pieces">
+          <h3>Captured Pieces</h3>
+          <div id="captured-white" class="captured-row"></div>
+          <div id="captured-black" class="captured-row"></div>
+        </div>
+        
+        <div class="move-history">
+          <h3>Move History</h3>
+          <div id="moves-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/chess.js"></script>
+</body>
+</html>

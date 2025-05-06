@@ -1,0 +1,4 @@
+(library
+ (public_name chess_webapp)
+ (name chess)
+ (libraries yojson unix))
